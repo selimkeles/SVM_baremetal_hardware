@@ -15,14 +15,6 @@ _autosave-*
 # KiCad backup directories
 *-backups/
 
-# KiCad 5 legacy files (replaced by KiCad 6 format)
-*.pro
-*.sch
-*.cache.lib
-*.lib
-*.dcm
-*.net
-
 # Generated outputs
 *.pdf
 bom/

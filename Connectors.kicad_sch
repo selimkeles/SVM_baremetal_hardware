@@ -1044,7 +1044,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cba8f5db-1b06-462f-a151-1435e79ae8e7")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR02"
 			(at 100.33 99.06 0)
 			(effects
 				(font
@@ -1095,7 +1095,7 @@
 		(instances
 			(project "inverter"
 				(path "/6a7e1a19-486b-4340-90f8-1e7274261ff8/8a931727-0f0a-4405-8b09-956dec8ed6bf"
-					(reference "#PWR012")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -1181,7 +1181,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec946179-0440-40d8-8265-01e3c4b72bc0")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR01"
 			(at 99.06 96.52 0)
 			(effects
 				(font
@@ -1232,7 +1232,7 @@
 		(instances
 			(project "inverter"
 				(path "/6a7e1a19-486b-4340-90f8-1e7274261ff8/8a931727-0f0a-4405-8b09-956dec8ed6bf"
-					(reference "#PWR011")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)

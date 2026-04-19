@@ -1,0 +1,3 @@
+[submodule "lib/MELTA_LIB"]
+	path = lib/MELTA_LIB
+	url = https://github.com/selimkeles/MeltaKiCadLibrary.git

@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Melta")(type "KiCad")(uri "${KIPRJMOD}/lib/MELTA_LIB/Melta.pretty")(options "")(descr "Custom KiCad 9 component library for Melta's electronics projects."))
+)

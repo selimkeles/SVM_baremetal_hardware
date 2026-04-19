@@ -51,7 +51,13 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -117,21 +123,21 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.2032,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_copper_edge_clearance": 0.3,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.25,
+        "min_hole_clearance": 0.2032,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
-        "min_silk_clearance": 0.0,
+        "min_silk_clearance": 0.1,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
-        "min_via_annular_width": 0.1,
+        "min_track_width": 0.254,
+        "min_via_annular_width": 0.2,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
@@ -180,7 +186,19 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.254,
+        0.508,
+        0.762,
+        1.016,
+        1.27,
+        1.524,
+        1.778,
+        2.032,
+        2.286,
+        2.54
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -207,7 +225,28 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.7112,
+          "drill": 0.3048
+        },
+        {
+          "diameter": 0.889,
+          "drill": 0.4064
+        },
+        {
+          "diameter": 1.1938,
+          "drill": 0.6096
+        },
+        {
+          "diameter": 1.6002,
+          "drill": 0.8128
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -226,7 +265,32 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "lib_symbol_mismatch|1295400|635000|e0708d8c-38b7-4ecc-8c95-7974b33326b0|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|1308100|1333500|9c4f8e74-c4a2-45a1-a629-696c377a9321|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|2273300|635000|6e3ac261-88e6-44aa-8289-7cb8f064b230|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|2286000|1333500|96dca72e-35b4-47d0-9b2e-959736f12adc|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|317500|635000|e4979972-d546-4063-850a-278090245454|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|330200|1333500|c3623492-ff13-4a3e-ad2f-2256d4ebce72|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -430,7 +494,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "error",
+      "pin_to_pin": "ignore",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -473,6 +537,43 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 1.0,
+        "name": "DCBUS",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 2.0,
+        "via_diameter": 1.6,
+        "via_drill": 0.8
+      },
+      {
+        "clearance": 0.3,
+        "name": "GATE",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "via_diameter": 0.7,
+        "via_drill": 0.3
+      },
+      {
+        "clearance": 3.0,
+        "name": "HV_MAINS",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.5,
+        "via_diameter": 1.6,
+        "via_drill": 0.8
+      },
+      {
+        "clearance": 0.0254,
+        "name": "PHASE_SW",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
       }
     ],
     "meta": {
@@ -480,7 +581,60 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "HV_MAINS",
+        "pattern": "NEUT"
+      },
+      {
+        "netclass": "HV_MAINS",
+        "pattern": "AC"
+      },
+      {
+        "netclass": "DCBUS",
+        "pattern": "VBUS"
+      },
+      {
+        "netclass": "DCBUS",
+        "pattern": "GNDREF"
+      },
+      {
+        "netclass": "PHASE_SW",
+        "pattern": "/Connectors/GNDsmps1"
+      },
+      {
+        "netclass": "PHASE_SW",
+        "pattern": "/Connectors/GNDsmps2"
+      },
+      {
+        "netclass": "PHASE_SW",
+        "pattern": "/Connectors/GNDsmps3"
+      },
+      {
+        "netclass": "GATE",
+        "pattern": "/Gate Drive/LO1"
+      },
+      {
+        "netclass": "GATE",
+        "pattern": "/Gate Drive/LO2"
+      },
+      {
+        "netclass": "GATE",
+        "pattern": "/Gate Drive/LO3"
+      },
+      {
+        "netclass": "GATE",
+        "pattern": "/Gate Drive/HO1"
+      },
+      {
+        "netclass": "GATE",
+        "pattern": "/Gate Drive/HO2"
+      },
+      {
+        "netclass": "GATE",
+        "pattern": "/Gate Drive/HO3"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -609,6 +763,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "space_save_all_events": true,

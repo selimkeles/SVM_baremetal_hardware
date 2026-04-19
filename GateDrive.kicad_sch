@@ -1279,6 +1279,30 @@
 		(color 0 0 0 0)
 		(uuid "fde04898-c245-4922-ba58-20bd9cdd546a")
 	)
+	(no_connect
+		(at 129.54 68.58)
+		(uuid "5e918c16-1366-4b61-8d9b-984767d1d0e0")
+	)
+	(no_connect
+		(at 31.75 68.58)
+		(uuid "698db0db-8454-49d6-9eb7-98cd74417a6f")
+	)
+	(no_connect
+		(at 228.6 138.43)
+		(uuid "9eb83311-68a1-4275-b0e6-8e572794bbbb")
+	)
+	(no_connect
+		(at 227.33 68.58)
+		(uuid "b8bd8e8a-6c7e-4d9b-9805-01dd5a5d1eeb")
+	)
+	(no_connect
+		(at 33.02 138.43)
+		(uuid "e7f90444-53c0-4131-a630-3ce0de8e0ac1")
+	)
+	(no_connect
+		(at 130.81 138.43)
+		(uuid "f78f737b-58da-4f8d-ad34-3c6755c11baa")
+	)
 	(wire
 		(pts
 			(xy 30.48 133.35) (xy 33.02 133.35)
@@ -2177,7 +2201,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 177.4952 72.39 0)
 			(effects
 				(font
@@ -2253,7 +2277,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 276.5552 142.24 0)
 			(effects
 				(font
@@ -2327,7 +2351,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 123.19 65.278 90)
 			(effects
 				(font
@@ -2401,7 +2425,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 220.98 65.278 90)
 			(effects
 				(font
@@ -2565,7 +2589,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 80.9752 142.24 0)
 			(effects
 				(font
@@ -2639,7 +2663,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 124.46 135.128 90)
 			(effects
 				(font
@@ -2713,7 +2737,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 26.67 135.128 90)
 			(effects
 				(font
@@ -2965,7 +2989,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 178.7652 142.24 0)
 			(effects
 				(font
@@ -3303,7 +3327,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 222.25 135.128 90)
 			(effects
 				(font
@@ -3379,7 +3403,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 275.2852 72.39 0)
 			(effects
 				(font
@@ -3453,7 +3477,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 25.4 65.278 90)
 			(effects
 				(font
@@ -3529,7 +3553,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 79.7052 72.39 0)
 			(effects
 				(font

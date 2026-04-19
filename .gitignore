@@ -1,0 +1,28 @@
+# KiCad local settings (user-specific, not design files)
+*.kicad_prl
+
+# KiCad cache and temporary files
+fp-info-cache
+*.kicad_pcb-bak
+*.sch-bak
+*.bak
+*.bak~
+*.lck
+
+# KiCad auto-save
+_autosave-*
+
+# KiCad backup directories
+*-backups/
+
+# Generated outputs
+*.pdf
+bom/
+gerbers/
+fab/
+manufacture/
+output/
+
+# Symbol and footprint caches
+*.kicad_sym-bak
+rescue-backup/
